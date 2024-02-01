@@ -6,7 +6,6 @@ import cv2
 import matplotlib.pyplot as plt
 import csv
 from tqdm import tqdm
-from motion_detection_utils import *
 
 def sorted_alphanumeric(data):
     convert = lambda text: int(text) if text.isdigit() else text.lower()
@@ -55,6 +54,11 @@ def background_substractor_mog2():
 
 # GMG es utilizado en ambientes con luminosidad variable
 def background_substractor_gmg(origin_path, output_directory):
+
+    '''
+    background_substractor_gmg()
+        origin_path: path a carpeta donde
+    '''
 
     image_paths = sorted(glob(f"{origin_path}/*.jpg"))
     image_paths = sorted_alphanumeric(image_paths)
