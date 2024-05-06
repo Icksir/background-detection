@@ -1,3 +1,4 @@
-frames_to_video.py
+create_gif.py
 /video
 /__pycache__
+animation.gif
